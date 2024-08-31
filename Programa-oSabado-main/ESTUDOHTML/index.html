@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,14 @@
     <title>Luiz e Pedro</title>
 </head>
 
-<body>
-    <header class="cabeca">
+<body style="background-color: rgb(2, 48, 78);">
+    <header class="cabeca"> 
+        <div class="title">
+            <h2 style="display: flex; justify-content: center; font-size: 2.2rem; color: rgb(187, 118, 160);">Praticando Html</h2>
+        </div>
         <nav>
             <ul
                 style="list-style: none; display: flex; align-items: center; justify-content: center; margin: 5px 10px; ">
-                <li><a href="#">Praticando Html</a></li>
                 <li style="margin-left: 8px; "><a href="#dg">Dragão</a></li>
                 <li style="margin-left: 8px;"><a href="#sobre">Sobre</a></li>
                 <li style="margin-left: 8px;"><a href="#saiba">Saiba+</a></li>
@@ -23,6 +25,9 @@
             </ul>
         </nav>
     </header>
+    
+    <!-- TITULO -->
+    <div class="titulo">Estudo HTML</div>
 
     <!-- Banner do dragão -->
     <div class="banner">
@@ -56,11 +61,16 @@
             <a href="https://www.hbo.com/house-of-the-dragon/map-of-westeros" target="_blank">Veja a localização do
                 Dragão,
                 obs: não cante a canção</a>
+            <address style="color: blueviolet; text-align: center;" >
+                Aegon Targaryen<br/>
+                Fortaleza vermelha<br/>
+                Wasteros<br/>
+                
+            </address>
             <!-- EMAIL -->
             <a href="mailto:someone@example.com">Envie um email para feedback</a>
         </div>
     </div>
-
 
     <!-- Sobre -->
     <div class="sobre" id="sobre">
@@ -150,7 +160,7 @@
             <!-- PRATOS PREDILETOS -->
 
             <H2>PRATOS</H2>
-            <ul>
+            <ol>
                 <li>Lasanha</li>
                 <li>Strogonoff</li>
                 <li>Bolo de cenoura</li>
@@ -161,22 +171,22 @@
                 <li>Torta Holandesa</li>
                 <li>Palha Italiana</li>
                 <li>Chocolate</li>
-            </ul>
+            </ol>
 
             <!-- LUGARES PREDILETOS -->
             <H2>LUGARES PREDILETOS</H2>
-            <ul>
-                <li>Neo Quimica Arena</li>
-                <li>Morumbi</li>
-                <li>Disney</li>
-                <li>Roma</li>
-                <li>Bariloche</li>
-                <li>Montevidéu</li>
-                <li>Canada</li>
-                <li>Amsterdã</li>
-                <li>Nova York</li>
-                <li>Madrid</li>
-            </ul>
+            <dl>
+                <dt>Neo Quimica Arena</dt>
+                <dt>Morumbi</li>
+                <dt>Disney</dt>
+                <dt>Roma</dt>
+                <dt>Bariloche</dt>
+                <dt>Montevidéu</dt>
+                <dt>Canada</dt>
+                <dt>Amsterdã</dt>
+                <dt>Nova York</dt>
+                <dt>Madrid</dt>
+            </dl>
         </div>
 
 
@@ -194,27 +204,21 @@
             <label for="">Nome</label>
             <input placeholder="Digite o seu nome" type="text">
 
-            <p>Estilo musical</p>
-            <input type="radio" value="Funk">
-            <label for="Funk">Funk</label>
+            <p>Estilo musical</p> 
+            <input type="radio"  name="opcao" value="Funk">Funk
 
-            <input type="radio" value="Trap">
-            <label for="Trap">Trap</label>
+            <input type="radio" name="opcao" value="Trap"> Trap
+           
+            <input type="radio" name="opcao" value="Eletronica"> Eletronica
 
-            <input type="radio" value="Eletronica">
-            <label for="Eletronica">Eletronica</label>
+            <input type="radio" name="opcao" value="Pagode">Pagode
 
-
-            <input type="radio" value="Pagode">
-            <label for="Pagode">Pagode</label>
-
-            <input type="radio" value="MPB">
-            <label for="MPB">MPB</label>
+            <input type="radio" name="opcao" value="MPB"> MPB
             <br><br>
             <label for="Data">Data de Nascimento</label>
             <input type="date">
 
-            <label for="Tel">Telefone</label>
+            <label for="Tel">Telefone</label> 
             <input type="tel" placeholder="Digite seu telefone">
             <br>
             <label for="sexo">Sexo:</label>
