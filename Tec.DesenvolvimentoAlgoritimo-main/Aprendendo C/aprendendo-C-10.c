@@ -18,7 +18,7 @@
 
   media=(n1+n2+n3+n4)/4;
 
-  printf("Sua nota final é: %.1f", media);
+  printf("\nSua nota final é: %.1f", media);
 
   return 0;
 
