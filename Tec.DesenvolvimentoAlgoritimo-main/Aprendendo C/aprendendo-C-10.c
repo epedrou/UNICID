@@ -1,9 +1,9 @@
- #include <stdio.h>
+  #include <stdio.h>
 
- int main() {
+  int main() {
 
   float n1,n2,n3,n4,media;
-
+   
   printf("Escreva sua nota em Portugues: ");
   scanf("%f", &n1);
 
@@ -18,7 +18,15 @@
 
   media=(n1+n2+n3+n4)/4;
 
-  printf("\nSua nota final é: %.1f", media);
+     printf("\nSua nota final é: %.1f", media);
+
+  if (media>=5){ 
+    
+   printf("\nVocê foi Aprovado");
+  
+  }else{
+    printf("\nVocê foi Reprovado");
+  }
 
   return 0;
 
